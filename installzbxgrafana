@@ -25,10 +25,10 @@ rm /tmp/finish
 apt install -y mysql-server mysql-client
 apt install -y zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent 
 apt install -y locales   > /dev/null 2>&1
-locale-gen es_ES.UTF-8 
+locale-gen en_US.UTF-8
 m-a prepare 
 # dpkg-reconfigure locales
-update-locale LANG=es_ES.UTF-8
+update-locale LANG=en_US.UTF-8
 
 apt install -y snmp snmpd     > /dev/null 2>&1
 apt install -y snmp-mibs-downloader  
